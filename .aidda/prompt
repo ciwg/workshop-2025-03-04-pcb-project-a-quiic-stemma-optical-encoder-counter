@@ -1,4 +1,4 @@
-convert first slide to outline, insert title slide
+restore footnotes
 
 Sysmsg: You are an expert Go programmer. Please make the requested changes to the given code or documentation.
 In: 
@@ -8,3 +8,7 @@ In:
     slides.thtml
 Out: 
     slides.md
+
+.stop
+
+move footnotes to their respective slides

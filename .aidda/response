@@ -1,8 +1,15 @@
 File: /home/stevegt/lab/cswg/workshop-2025-03-04-pcb-project-a-quiic-stemma-optical-encoder-counter/slides.md
 ```markdown
-# Title Slide
-Workshop 2025 Encoder Counter Project
-Quiic/STEMMA Optical Encoder Counter
+class: center, middle
+
+# High-Speed Optical Encoder Counter 
+
+**Compatible with the Quiic/STEMMA ecosystem from SparkFun and Adafruit**
+
+Rebecca Snyder, Steve Traugott
+
+*CSWG Workshop March 2025*
+
 
 ---
 
@@ -18,11 +25,6 @@ Quiic/STEMMA Optical Encoder Counter
 - Many available Quiic/STEMMA peripherals
 - No available Quiic/STEMMA high-speed encoder counters
 
-class: center, middle
-
----
-
-# Quadrature Encoders and I2C
 
 ---
 
@@ -36,6 +38,10 @@ class: center, middle
 Quadrature encoder diagram
 *CC BY-SA 3.0*
 
+[^1]: https://www.usdigital.com/blog/what-is-quadrature/
+[^2]: https://www.phidgets.com/docs/Encoder_Guide
+
+
 ---
 
 # Why are they needed?
@@ -48,6 +54,10 @@ Quadrature encoder diagram
 Encoder application
 *CC BY-SA 3.0*
 
+[^1]: https://www.usdigital.com/blog/what-is-quadrature/
+[^3]: https://www.automate.org/motion-control/industry-insights/understanding-optical-encoders-part-i-of-ii
+
+
 ---
 
 # High speed issues
@@ -57,6 +67,9 @@ Encoder application
 - Microcontrollers may struggle to keep up with high-frequency signals
 - Interrupts and software-based counting become unreliable[^10]
 
+[^10]: https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F
+
+
 ---
 
 # Few open-source encoder counter boards right now
@@ -64,6 +77,7 @@ Encoder application
 - Limited availability of dedicated hardware solutions
 - Most implementations rely on microcontroller interrupts
 - Gap in the market for high-speed, open-source encoder counter boards
+
 
 ---
 
@@ -73,6 +87,9 @@ Encoder application
 - Two-wire interface: SDA (data) and SCL (clock)
 - Allows multiple devices on the same bus
 - Simple and widely supported in electronics[^6]
+
+[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
+
 
 ---
 
@@ -86,6 +103,10 @@ Encoder application
 STEMMA QT connector
 *Image © Adafruit, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)*
 
+[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
+[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+
+
 ---
 
 # Many available Qwiic/STEMMA microcontroller boards
@@ -96,6 +117,10 @@ STEMMA QT connector
 - Raspberry Pi with STEMMA QT hat
 - Easy integration with existing projects[^7][^8]
 
+[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
+
+
 ---
 
 # Many available Qwiic/STEMMA peripherals
@@ -104,6 +129,10 @@ STEMMA QT connector
 - Displays: OLED screens
 - Actuators and input devices
 - Rapid prototyping with plug-and-play modules[^7][^8]
+
+[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
+
 
 ---
 
@@ -115,19 +144,5 @@ STEMMA QT connector
 - Potential to address limitations of software-based counting
 
 <div style="text-align: center">⁂</div>
-
-[^1]: https://www.usdigital.com/blog/what-is-quadrature/
-
-[^2]: https://www.phidgets.com/docs/Encoder_Guide
-
-[^3]: https://www.automate.org/motion-control/industry-insights/understanding-optical-encoders-part-i-of-ii
-
-[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
-
-[^7]: https://bc-robotics.com/product-tag/stemma-qt/
-
-[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
-
-[^10]: https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F
 ```
 EOF_/home/stevegt/lab/cswg/workshop-2025-03-04-pcb-project-a-quiic-stemma-optical-encoder-counter/slides.md
