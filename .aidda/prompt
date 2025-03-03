@@ -1,6 +1,4 @@
-autorebuild and reload web page on change
-
-When slides.md changes, rebuild slides.html and reload the web page.
+convert first slide to outline, insert title slide
 
 Sysmsg: You are an expert Go programmer. Please make the requested changes to the given code or documentation.
 In: 
@@ -9,5 +7,4 @@ In:
     slides.md
     slides.thtml
 Out: 
-    main.go
-    slides.thtml
+    slides.md
