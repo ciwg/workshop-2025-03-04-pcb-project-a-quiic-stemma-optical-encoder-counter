@@ -1,0 +1,13 @@
+autorebuild and reload web page on change
+
+When slides.md changes, rebuild slides.html and reload the web page.
+
+Sysmsg: You are an expert Go programmer. Please make the requested changes to the given code or documentation.
+In: 
+    main.go
+    slides.html
+    slides.md
+    slides.thtml
+Out: 
+    main.go
+    slides.thtml

@@ -24,10 +24,19 @@
     var slideshow = remark.create({
       ratio: '16:9',
       navigation: {
-        scroll: true,   // Disables scrolling navigation
-        touch: true      // Enables touch navigation
+        scroll: true,   // Enables scroll navigation
+        touch: true     // Enables touch navigation
       }
     });
+  </script>
+  <script>
+    // Establish a websocket connection to receive reload notifications.
+    var ws = new WebSocket("ws://" + window.location.host + "/ws");
+    ws.onmessage = function(event) {
+      if (event.data === "reload") {
+        window.location.reload();
+      }
+    };
   </script>
 </body>
 </html>

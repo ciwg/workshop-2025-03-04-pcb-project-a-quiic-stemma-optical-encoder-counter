@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Slides</title>
+  <title>draft a slide presentation, in markdown format, compatible with remark.js, including CC-licensed links to found images, covering the following topics, one per slide:</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.css">
@@ -14,12 +14,6 @@
 <body>
   
   <textarea id="source">
-&lt;img src=&#34;https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png&#34; class=&#34;logo&#34; width=&#34;120&#34;/&gt;
-
-# 
-
----
-
 # draft a slide presentation, in markdown format, compatible with remark.js, including CC-licensed links to found images, covering the following topics, one per slide:
 
 - What is a quadrature optical encoder?
@@ -329,9 +323,18 @@ STEMMA QT connector
       ratio: '16:9',
       navigation: {
         scroll: true,   
-        touch: true      
+        touch: true     
       }
     });
+  </script>
+  <script>
+    
+    var ws = new WebSocket("ws://" + window.location.host + "/ws");
+    ws.onmessage = function(event) {
+      if (event.data === "reload") {
+        window.location.reload();
+      }
+    };
   </script>
 </body>
 </html>

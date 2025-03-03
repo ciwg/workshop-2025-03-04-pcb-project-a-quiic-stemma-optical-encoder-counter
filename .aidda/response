@@ -1,8 +1,11 @@
+File: /home/stevegt/lab/cswg/workshop-2025-03-04-pcb-project-a-quiic-stemma-optical-encoder-counter/main.go
+```go
 package main
 
 import (
 	"bufio"
 	"bytes"
+	"fmt"
 	"html/template"
 	"io/ioutil"
 	"log"
@@ -87,7 +90,6 @@ func buildSlides() {
 	mdContent := string(mdBytes)
 
 	// Extract the title from slides.md.
-	// The title is assumed to be the content of the first line starting with "#"
 	scanner := bufio.NewScanner(strings.NewReader(mdContent))
 	var title string
 	for scanner.Scan() {
@@ -170,7 +172,7 @@ func watchSlides(hub *Hub) {
 			if strings.HasSuffix(event.Name, "slides.md") &&
 				(event.Op&fsnotify.Write == fsnotify.Write || event.Op&fsnotify.Create == fsnotify.Create || event.Op&fsnotify.Rename == fsnotify.Rename) {
 				// Debounce: wait briefly for successive events.
-				debounce = time.After(1000 * time.Millisecond)
+				debounce = time.After(100 * time.Millisecond)
 			}
 		case <-debounce:
 			buildSlides()
@@ -212,3 +214,52 @@ func main() {
 		os.Exit(1)
 	}
 }
+```
+EOF_/home/stevegt/lab/cswg/workshop-2025-03-04-pcb-project-a-quiic-stemma-optical-encoder-counter/main.go
+
+File: /home/stevegt/lab/cswg/workshop-2025-03-04-pcb-project-a-quiic-stemma-optical-encoder-counter/slides.thtml
+```thtml
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Remark.js CSS (optional, can be customized) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff; color: #333; }
+    textarea { display: none; }
+  </style>
+</head>
+<body>
+  <!-- The slides content passed from the Go backend -->
+  <textarea id="source">
+{{ .Slides }}
+  </textarea>
+
+  <!-- Load remark.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+  <script>
+    // Create a new slideshow using remark.js
+    var slideshow = remark.create({
+      ratio: '16:9',
+      navigation: {
+        scroll: true,   // Enables scroll navigation
+        touch: true     // Enables touch navigation
+      }
+    });
+  </script>
+  <script>
+    // Establish a websocket connection to receive reload notifications.
+    var ws = new WebSocket("ws://" + window.location.host + "/ws");
+    ws.onmessage = function(event) {
+      if (event.data === "reload") {
+        window.location.reload();
+      }
+    };
+  </script>
+</body>
+</html>
+```
+EOF_/home/stevegt/lab/cswg/workshop-2025-03-04-pcb-project-a-quiic-stemma-optical-encoder-counter/slides.thtml

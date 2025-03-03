@@ -1,9 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
-# 
-
----
-
 # draft a slide presentation, in markdown format, compatible with remark.js, including CC-licensed links to found images, covering the following topics, one per slide:
 
 - What is a quadrature optical encoder?
