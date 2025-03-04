@@ -102,6 +102,8 @@ Rebecca Snyder, Steve Traugott
 - Figures out direction of rotation from phase relationship
 - Uses pulse count and direction to maintain a position counter
 
+![:img Quadrature decoder, 70%](QuadratureDecoder.png)
+
 [Quadrature decoder](https://en.wikipedia.org/wiki/Incremental_encoder#Quadrature_decoder)
 ---
 
