@@ -1,0 +1,11 @@
+--2025-03-03 19:37:42--  https://cdn-learn.adafruit.com/assets/assets/000/078/690/medium640/sensors_3919-02.jpg?1564347584
+Resolving cdn-learn.adafruit.com (cdn-learn.adafruit.com)... 104.20.38.240, 104.20.39.240, 2606:4700:10::6814:26f0, ...
+Connecting to cdn-learn.adafruit.com (cdn-learn.adafruit.com)|104.20.38.240|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 33904 (33K) [image/jpeg]
+Saving to: ‘sensors_3919-02.jpg?1564347584’
+
+     0K .......... .......... .......... ...                  100% 5.53M=0.006s
+
+2025-03-03 19:37:42 (5.53 MB/s) - ‘sensors_3919-02.jpg?1564347584’ saved [33904/33904]
+

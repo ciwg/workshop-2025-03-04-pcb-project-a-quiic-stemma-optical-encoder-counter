@@ -148,11 +148,11 @@ Rebecca Snyder, Steve Traugott
 - 4-pin JST SH connector (3.3V, GND, SDA, SCL)
 - Simplifies prototyping and reduces errors
 
-STEMMA QT connector  
-*Image © Adafruit, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)*
+![:img Qwiic, 40%](qwiic.jpg)
+![:img STEMMA QT, 40%](stemma-qt.jpg)
 
-- [Adafruit STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt)
 - [SparkFun Qwiic](https://learn.sparkfun.com/tutorials/qwiic-connect-system)
+- [Adafruit STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt)
 
 ---
 
