@@ -233,8 +233,7 @@ SparkFun, Adafruit, and others now make many boards with Qwiic/STEMMA connectors
 - OSH Stencils 
 
 ---
-XXX
-
+# reflow video
 
 ---
 # v0.3 PCB
