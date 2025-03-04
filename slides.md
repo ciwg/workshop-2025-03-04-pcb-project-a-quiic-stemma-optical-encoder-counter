@@ -33,8 +33,8 @@ Rebecca Snyder, Steve Traugott
 - Optical disk with alternating opaque/transparent sections
 - LED light source and photodetector generate signals
 
-![:img Encoder Animation, 30%](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
-![:img Quadrature encoder signals, 30%](quadrature-signals.jpg)
+![:img Encoder Animation, 40%](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
+![:img Quadrature encoder signals, 40%](quadrature-signals.jpg)
 
 - [Incremental encoder on Wikipedia](https://en.wikipedia.org/wiki/Incremental_encoder)
 - [What is a Quadrature Encoder?](https://www.usdigital.com/blog/what-is-quadrature/)
