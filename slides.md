@@ -33,8 +33,6 @@ Rebecca Snyder, Steve Traugott
 
 ![Encoder Animation](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
 
-References:
-
 - [Incremental encoder on Wikipedia](https://en.wikipedia.org/wiki/Incremental_encoder)
 - [What is a Quadrature Encoder?](https://www.usdigital.com/blog/what-is-quadrature/)
 - [Encoder Guide](https://www.phidgets.com/docs/Encoder_Guide)
@@ -46,13 +44,8 @@ References:
 - Precise position and speed measurement
 - Direction detection (clockwise vs. counterclockwise)
 - Feedback control in various applications
-- User input for rotary controls[^1][^3]
+- User input for rotary controls
 
-Encoder application
-*CC BY-SA 3.0*
-
-[^1]: https://www.usdigital.com/blog/what-is-quadrature/
-[^3]: https://www.automate.org/motion-control/industry-insights/understanding-optical-encoders-part-i-of-ii
 
 ---
 
@@ -61,10 +54,12 @@ Encoder application
 - Signal frequency increases with speed and resolution
 - Example: 2000 pulses/rev at 2000 RPM ≈ 67 kHz
 - Microcontrollers may struggle to keep up with high-frequency signals
-- Interrupts and software-based counting become unreliable[^10]
+- Interrupts and software-based counting become unreliable
 
-[^10]: https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F
+- [High-speed quadrature encoder issue](https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F)
 
+---
+https://en.wikipedia.org/wiki/Incremental_encoder#Quadrature_decoder
 ---
 
 # Few open-source encoder counter boards right now
@@ -80,9 +75,9 @@ Encoder application
 - Inter-Integrated Circuit communication protocol
 - Two-wire interface: SDA (data) and SCL (clock)
 - Allows multiple devices on the same bus
-- Simple and widely supported in electronics[^6]
+- Simple and widely supported in electronics
 
-[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
+- [I2C protocol](https://www.prodigytechno.com/i2c-protocol)
 
 ---
 
@@ -91,13 +86,13 @@ Encoder application
 - Standardized connectors for I2C devices
 - Qwiic (SparkFun) and STEMMA QT (Adafruit) are compatible
 - 4-pin JST SH connector (3.3V, GND, SDA, SCL)
-- Simplifies prototyping and reduces errors[^6][^7]
+- Simplifies prototyping and reduces errors
 
-STEMMA QT connector
+STEMMA QT connector  
 *Image © Adafruit, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)*
 
-[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
-[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+- [Adafruit STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt)
+- [SparkFun Qwiic](https://learn.sparkfun.com/tutorials/qwiic-connect-system)
 
 ---
 
@@ -107,10 +102,11 @@ STEMMA QT connector
 - Adafruit Feather and QT Py series
 - Teensy with STEMMA QT adapter
 - Raspberry Pi with STEMMA QT hat
-- Easy integration with existing projects[^7][^8]
+- Easy integration with existing projects
 
-[^7]: https://bc-robotics.com/product-tag/stemma-qt/
-[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
+- [Qwiic/STEMMA microcontroller boards](https://www.digikey.com/en/products/filter/evaluation-boards/embedded-mcu-dsp-evaluation-boards/qwiic-stemma-qt/786?s=N4IgjCBcpg7ALAJiqAxlAZgQwDYGcBTAGhADcA7KAFwCcBXYkAeygG0QkA2TgBgGYQAXRIAHKlBABlWgEtyAcxABfFUA)
+- [Adafruit QT boards](https://www.adafruit.com/stemma)
+- [SparkFun Qwiic boards](https://www.sparkfun.com/qwiic)
 
 ---
 
@@ -119,10 +115,8 @@ STEMMA QT connector
 - Sensors: accelerometers, light sensors, RTCs
 - Displays: OLED screens
 - Actuators and input devices
-- Rapid prototyping with plug-and-play modules[^7][^8]
+- Rapid prototyping with plug-and-play modules
 
-[^7]: https://bc-robotics.com/product-tag/stemma-qt/
-[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
 
 ---
 
