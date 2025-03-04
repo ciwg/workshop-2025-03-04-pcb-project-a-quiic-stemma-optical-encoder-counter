@@ -213,6 +213,8 @@ SparkFun, Adafruit, and others now make many boards with Qwiic/STEMMA connectors
 - v0.3 solder, test, iterate
 - write libraries for Particle Photon, Adafruit Feather, Teensy, etc.
     - both C++ and CircuitPython
+- commission reflow oven @cdint
+- small batch production
 - offer on e.g. Tindie or Crowd Supply
 - offer on cdint.com (after site redesign)
 - offer on Amazon?
