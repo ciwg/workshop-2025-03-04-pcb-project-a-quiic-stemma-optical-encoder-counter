@@ -3,7 +3,7 @@
 go run main.go &
 pid=$!
 
-trap "kill $pid" EXIT INT TERM HUP 
+trap "kill $pid; exit 0" EXIT INT TERM HUP 
 
 while true
 do inotifywait -r -e modify *
