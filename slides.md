@@ -111,8 +111,11 @@ Rebecca Snyder, Steve Traugott
 # Few open-source encoder counter boards right now
 
 - Limited availability of dedicated hardware solutions
-- Most implementations rely on microcontroller interrupts
+- Most that do exist are intended for low-speed applications
+    - e.g. [SparkFun Qwiic Twist](https://www.sparkfun.com/sparkfun-qwiic-twist-rgb-rotary-encoder-breakout.html)
 - Gap in the market for high-speed, open-source encoder counter boards
+    - Even bigger gap for boards compatible with Qwiic/STEMMA ecosystem from SparkFun and Adafruit
+    - None known to exist at this time
 
 ---
 
