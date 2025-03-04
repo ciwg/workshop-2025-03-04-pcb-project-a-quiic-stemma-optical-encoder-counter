@@ -29,13 +29,15 @@ Rebecca Snyder, Steve Traugott
 - Sensor for tracking rotational position and direction
 - Uses two output channels (A and B) offset by 90 degrees
 - Optical disk with alternating opaque/transparent sections
-- LED light source and photodetector generate signals[^1][^2]
+- LED light source and photodetector generate signals
 
-Quadrature encoder diagram
+![Encoder Animation](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
 
+References:
 
-[^1]: https://www.usdigital.com/blog/what-is-quadrature/
-[^2]: https://www.phidgets.com/docs/Encoder_Guide
+- [Incremental encoder on Wikipedia](https://en.wikipedia.org/wiki/Incremental_encoder)
+- [What is a Quadrature Encoder?](https://www.usdigital.com/blog/what-is-quadrature/)
+- [Encoder Guide](https://www.phidgets.com/docs/Encoder_Guide)
 
 ---
 
@@ -259,7 +261,7 @@ STEMMA QT connector
 
 [^63]: https://www.plctalk.net/threads/unusual-encoder-failure-modes.98592/
 
-[^64]: http://engineering.nyu.edu/mechatronics/Control_Lab/Criag/Craig_RPI/SenActinMecha/S\&A_Optical_Encoders.pdf
+[^64]: http://engineering.nyu.edu/mechatronics/Control_Lab/Criag/Craig_RPI/SenActinMecha/S&A_Optical_Encoders.pdf
 
 [^65]: https://forum.arduino.cc/t/is-there-a-simple-quadrature-decoder-module/481402
 
@@ -322,4 +324,3 @@ STEMMA QT connector
 [^94]: https://www.plctalk.net/threads/how-to-use-encoders-high-speed-counters.35270/
 
 [^95]: https://forums.adafruit.com/viewtopic.php?t=206678
-
