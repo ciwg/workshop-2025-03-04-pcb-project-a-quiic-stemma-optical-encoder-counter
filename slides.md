@@ -123,6 +123,10 @@ Rebecca Snyder, Steve Traugott
   writing
     - This makes closed-loop prototyping harder than it should be
 
+![:img Layer shifts, 40%](layer_shifts.jpg)
+
+[Layer shifts](https://wiki.bambulab.com/en/knowledge-sharing/layer-shifts)
+
 ---
 
 # What is I2C?
