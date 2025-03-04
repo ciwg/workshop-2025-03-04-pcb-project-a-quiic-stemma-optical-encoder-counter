@@ -165,14 +165,12 @@ Rebecca Snyder, Steve Traugott
     - Adafruit Feather and QT Py series
     - Teensy with STEMMA QT adapter
     - Raspberry Pi with STEMMA QT hat
-- Peripherals
-    - Sensors: 
+- Peripherals, Sensors, and Displays
         - CO2
         - temperature, humidity, pressure
         - motion (accelerometers, gyroscopes)
         - light
-    - Displays 
-    - Motor controllers
+- Motor controllers
 
 - [SparkFun Qwiic boards](https://www.sparkfun.com/catalogsearch/result/?q=qwiic)
 - [Adafruit STEMMA QT boards](https://www.adafruit.com/search?q=stemma+qt)
