@@ -147,7 +147,7 @@ Rebecca Snyder, Steve Traugott
 - Qwiic (SparkFun) and STEMMA QT (Adafruit) are compatible with each
   other
 - 4-pin JST SH connector (3.3V, GND, SDA, SCL)
-- Speeds up prototyping by eliminating soldering and wiring
+- Speeds up prototyping by eliminating soldering and breadboarding
 
 ![:img Qwiic, 40%](qwiic.jpg)
 ![:img STEMMA QT, 40%](stemma-qt.jpg)
@@ -157,36 +157,36 @@ Rebecca Snyder, Steve Traugott
 
 ---
 
-# Many available Qwiic/STEMMA microcontroller boards
+# Many, many available Qwiic/STEMMA microcontroller boards
 
-- Arduino-compatible boards
-- Adafruit Feather and QT Py series
-- Teensy with STEMMA QT adapter
-- Raspberry Pi with STEMMA QT hat
-- Easy integration with existing projects
+- SparkFun, Adafruit, and others now make many boards with Qwiic/STEMMA connectors
+- Microcontrollers
+    - Arduino-compatible 
+    - Adafruit Feather and QT Py series
+    - Teensy with STEMMA QT adapter
+    - Raspberry Pi with STEMMA QT hat
+- Peripherals
+    - Sensors: 
+        - CO2
+        - temperature, humidity, pressure
+        - motion (accelerometers, gyroscopes)
+        - light
+    - Displays 
+    - Motor controllers
 
-- [Qwiic/STEMMA microcontroller boards](https://www.digikey.com/en/products/filter/evaluation-boards/embedded-mcu-dsp-evaluation-boards/qwiic-stemma-qt/786?s=N4IgjCBcpg7ALAJiqAxlAZgQwDYGcBTAGhADcA7KAFwCcBXYkAeygG0QkA2TgBgGYQAXRIAHKlBABlWgEtyAcxABfFUA)
-- [Adafruit QT boards](https://www.adafruit.com/stemma)
-- [SparkFun Qwiic boards](https://www.sparkfun.com/qwiic)
-
----
-
-# Many available Qwiic/STEMMA peripherals
-
-- Sensors: accelerometers, light sensors, RTCs
-- Displays: OLED screens
-- Actuators and input devices
-- Rapid prototyping with plug-and-play modules
-
+- [SparkFun Qwiic boards](https://www.sparkfun.com/catalogsearch/result/?q=qwiic)
+- [Adafruit STEMMA QT boards](https://www.adafruit.com/search?q=stemma+qt)
 
 ---
 
-# No available Qwiic/STEMMA high-speed encoder counters
+# But no Qwiic/STEMMA high-speed encoder counters exist...
 
 - Current gap in the Qwiic/STEMMA ecosystem
 - Opportunity for development of a dedicated encoder counter
 - Would simplify integration of high-speed encoders in projects
 - Potential to address limitations of software-based counting
+
+# ...until now.
 
 ---
 
