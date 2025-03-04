@@ -127,8 +127,17 @@ Rebecca Snyder, Steve Traugott
 # Few open-source encoder counter boards right now
 
 - Gap in the market for high-speed, open-source encoder counter boards
-    - Even bigger gap for boards compatible with Qwiic/STEMMA ecosystem from SparkFun and Adafruit
-        - No Qwiic/STEMMA counter boards known to exist as of this writing
+- This makes it harder than it should be to do closed-loop motor
+  control with open-source hardware
+    - This causes the Maker and open hardware community to use
+      open-loop control for motors
+    - e.g. most 3D printers are open-loop
+- Even bigger gap for boards compatible with Qwiic/STEMMA ecosystem
+  from SparkFun and Adafruit
+    - Qwiic/STEMMA is a standardized connector for I2C devices
+- No Qwiic/STEMMA encoder counter boards known to exist as of this
+  writing
+    - This makes closed-loop prototyping harder than it should be
 
 ---
 
@@ -139,7 +148,7 @@ Rebecca Snyder, Steve Traugott
 - Allows multiple devices on the same bus
 - Simple and widely supported in electronics
 
-![:img I2C controller target, 70%](I2C_controller-target.png)
+![:img I2C controller target, 50%](I2C_controller-target.png)
 
 - [I2C protocol](https://en.wikipedia.org/wiki/I%C2%B2C)
 
