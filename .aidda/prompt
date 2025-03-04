@@ -1,4 +1,4 @@
-convert footnotes to a bullet list at the bottom of each slide
+serve images and other assets from the same directory as the slides
 
 Sysmsg: You are an expert Go programmer. Please make the requested changes to the given code or documentation.
 In: 
@@ -7,7 +7,7 @@ In:
     slides.md
     slides.thtml
 Out: 
-    slides.md
+    main.go
 
 .stop
 

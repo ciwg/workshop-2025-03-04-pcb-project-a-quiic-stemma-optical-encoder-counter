@@ -24,6 +24,8 @@ Rebecca Snyder, Steve Traugott
 
 *CSWG Workshop March 2025*
 
+![:img 3D View, 40%](3dview.png)
+
 ---
 
 # Outline
@@ -62,6 +64,7 @@ Rebecca Snyder, Steve Traugott
 - Feedback control in various applications
 - User input for rotary controls
 
+![:img Mouse Mechanism, 100%](mouse-mechanism-cutaway.png)
 
 ---
 
@@ -340,6 +343,10 @@ STEMMA QT connector
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
   <script>
+    
+    remark.macros['img'] = function (altText, width) { var url = this; return '<img alt="' +
+      altText + '" src="' + url + '" style="width: ' + width + '" />';
+    };
     
     var slideshow = remark.create({
       ratio: '16:9',

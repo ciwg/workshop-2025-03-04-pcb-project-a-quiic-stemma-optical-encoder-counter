@@ -20,6 +20,10 @@
   <!-- Load remark.js from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
   <script>
+    // Add a custom macro to resize images remark.macros.img =
+    remark.macros['img'] = function (altText, width) { var url = this; return '<img alt="' +
+      altText + '" src="' + url + '" style="width: ' + width + '" />';
+    };
     // Create a new slideshow using remark.js
     var slideshow = remark.create({
       ratio: '16:9',

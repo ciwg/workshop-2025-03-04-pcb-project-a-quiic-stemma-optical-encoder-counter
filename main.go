@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"fmt"
 	"html/template"
 	"io/ioutil"
 	"log"
@@ -196,9 +197,17 @@ func main() {
 	// Start watching slides.md for changes.
 	go watchSlides(hub)
 
-	// Serve the generated slides.html.
+	// Serve slides.html and static assets from the same directory.
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "slides.html")
+		// If the request is for the root, serve slides.html.
+		if r.URL.Path == "/" {
+			fmt.Println("Serving slides.html")
+			http.ServeFile(w, r, "slides.html")
+			return
+		}
+		// Serve other files (e.g., images, CSS, JS) from the current directory.
+		fmt.Println("Serving", r.URL.Path[1:])
+		http.ServeFile(w, r, r.URL.Path[1:])
 	})
 
 	// Endpoint for websocket connections.
@@ -206,7 +215,7 @@ func main() {
 		wsHandler(hub, w, r)
 	})
 
-	log.Println("Serving slides.html on http://localhost:8192")
+	log.Println("Serving slides.html and assets on http://localhost:8192")
 	if err := http.ListenAndServe(":8192", nil); err != nil {
 		log.Fatalf("Failed to start server: %v", err)
 		os.Exit(1)
