@@ -33,8 +33,8 @@ Rebecca Snyder, Steve Traugott
 - Optical disk with alternating opaque/transparent sections
 - LED light source and photodetector generate signals
 
-![Encoder Animation](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
-![:img Quadrature encoder signals, 50%](quadrature-signals.jpg)
+![:img Encoder Animation, 30%](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
+![:img Quadrature encoder signals, 30%](quadrature-signals.jpg)
 
 - [Incremental encoder on Wikipedia](https://en.wikipedia.org/wiki/Incremental_encoder)
 - [What is a Quadrature Encoder?](https://www.usdigital.com/blog/what-is-quadrature/)
@@ -84,11 +84,11 @@ Rebecca Snyder, Steve Traugott
 # High speed issues
 
 - Signal frequency increases with speed and resolution
-    - Example: 2000 pulses/rev at 2,000 RPM * 2 detectors ≈ 133 kHz,
+- If using two GPIO pins to watch the A and B signals, microcontroller may miss pulses
+- Microcontroller still handling previous pulse when next pulse arrives
+- Example: 2000 pulses/rev at 2,000 RPM * 2 detectors ≈ 133 kHz,
       or 7.5 µs per pulse
-- Microcontrollers struggle to keep up with high-frequency signals
-    - Interrupts and software-based counting miss pulses at high speeds
-    - Microcontroller still handling previous pulse when next pulse arrives
+    - if microcontroller takes longer than 7.5 µs to process a pulse, it will miss the next one
 
 ![:img High-resolution discs, 70%](disks-resolution.jpg)
 
