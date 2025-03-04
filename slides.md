@@ -44,18 +44,13 @@ Rebecca Snyder, Steve Traugott
 ---
 # How does an optical encoder work?
 
+- Direction of rotation determined by phase relationship
+- Counting pulses on both channels gives position and direction
+
 ![:img Optical encoder CW, 40%](r900-mvcw-encoder-base-fig3-2.gif)
 ![:img Optical encoder CC, 40%](r900-mvcc-encoder-base-fig3-2.gif)
 
 - [Tutorial from AKM](https://www.akm.com/global/en/products/rotation-angle-sensor/tutorial/type-mechanism-2/)
----
-# Electrical signals from an encoder
-
-- Quadrature signals A and B
-- Direction of rotation determined by phase relationship
-- Counting pulses on both channels gives position and direction
-
-
 
 ---
 
@@ -89,7 +84,8 @@ Rebecca Snyder, Steve Traugott
 # High speed issues
 
 - Signal frequency increases with speed and resolution
-    - Example: 2000 pulses/rev at 2,000 RPM * 2 detectors ≈ 133 kHz
+    - Example: 2000 pulses/rev at 2,000 RPM * 2 detectors ≈ 133 kHz,
+      or 7.5 µs per pulse
 - Microcontrollers struggle to keep up with high-frequency signals
     - Interrupts and software-based counting miss pulses at high speeds
     - Microcontroller still handling previous pulse when next pulse arrives
