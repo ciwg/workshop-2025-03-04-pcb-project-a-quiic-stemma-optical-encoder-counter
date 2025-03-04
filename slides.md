@@ -178,14 +178,16 @@ SparkFun, Adafruit, and others now make many boards with Qwiic/STEMMA connectors
 
 ---
 
-# But no Qwiic/STEMMA encoder counters exist...
+# But no Qwiic/STEMMA encoder counters
 
-- Current gap in the Qwiic/STEMMA ecosystem
-- Opportunity for development of a dedicated encoder counter
-- Would simplify integration of high-speed encoders in projects
-- Potential to address limitations of software-based counting
+- So we decided to do something about it
+- LSI Logic has a 32-bit counter with quadrature decoding and I2C interface (LS7866)
+    - Rarely used in Maker and open hardware projects so far
+    - So we designed a board around it
 
-# ...until now.
+![:img LS7866, 40%](ls7866-bus.jpg)
+
+[LS7866 datasheet](https://lsicsi.com/wp-content/uploads/2023/12/LS7866.pdf)
 
 ---
 
