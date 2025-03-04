@@ -1,13 +1,12 @@
-serve images and other assets from the same directory as the slides
+convert the footnotes at the end into clickable links, 10 per slide
 
 Sysmsg: You are an expert Go programmer. Please make the requested changes to the given code or documentation.
 In: 
     main.go
     slides.html
-    slides.md
     slides.thtml
 Out: 
-    main.go
+    slides.md
 
 .stop
 

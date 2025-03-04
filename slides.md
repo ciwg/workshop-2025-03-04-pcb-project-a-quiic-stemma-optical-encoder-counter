@@ -41,15 +41,17 @@ Rebecca Snyder, Steve Traugott
 
 ---
 
-# How are optical encoders used?
+# Where are optical encoders used?
 
-- Precise position, speed, and direction sensing for motors
-    - motor + encoder = servo
-    - closed-loop control
+## Low-speed applications
 - User input for rotary controls
 
 ![:img Mouse Mechanism, 35%](Mouse-mechanism-cutaway.png)
 
+## High-speed applications
+- Precise position, speed, and direction sensing for motors
+    - motor + encoder = servo
+    - closed-loop motor control
 ---
 
 # High speed issues
