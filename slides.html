@@ -126,8 +126,6 @@ Rebecca Snyder, Steve Traugott
 # The missing piece
 
 - Open-source encoder counter boards are rare
-- This makes it harder than it should be to do closed-loop motor
-  control with open-source hardware
     - This causes the Maker and open hardware community to use
       open-loop control for motors
     - e.g. most 3D printers are open-loop
@@ -149,7 +147,9 @@ Rebecca Snyder, Steve Traugott
 - Inter-Integrated Circuit communication protocol
 - Two-wire interface: SDA (data) and SCL (clock)
 - Allows multiple devices on the same bus
-- Simple and widely supported in electronics
+- Simple and widely supported
+    - many microcontrollers have I2C hardware
+    - your laptop uses I2C internally to talk to the trackpad, keyboard, etc.
 
 ![:img I2C controller target, 50%](I2C_controller-target.png)
 
