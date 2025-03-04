@@ -178,18 +178,17 @@ SparkFun, Adafruit, and others now make many boards with Qwiic/STEMMA connectors
 
 ---
 
-# But no Qwiic/STEMMA encoder counters
+# A Qwiic/STEMMA encoder counter
 
 - LSI Logic has a 32-bit counter chip with quadrature decoding and I2C interface (LS7866)
 - So we designed a board around it
 - Uses Qwiic/STEMMA connectors for easy integration
 - Like any Qwiic/STEMMA device, it can be daisy-chained
     - Multiple encoders can be used on the same I2C bus
-    - Each encoder has a unique address
     - Same bus can be shared with other devices like sensors, displays, etc.
 
+![:img LS7866, 20%](ls7866-TSSOP14.png)
 ![:img LS7866, 40%](ls7866-bus.jpg)
-![:img LS7866, 40%](ls7866-TSSOP14.png)
 
 [LS7866 datasheet](https://lsicsi.com/wp-content/uploads/2023/12/LS7866.pdf)
 
