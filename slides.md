@@ -151,7 +151,7 @@ Rebecca Snyder, Steve Traugott
 ![:img Qwiic, 40%](qwiic.jpg)
 ![:img STEMMA QT, 40%](stemma-qt.jpg)
 
-- [SparkFun Qwiic](https://learn.sparkfun.com/tutorials/qwiic-connect-system)
+- [SparkFun Qwiic](https://www.sparkfun.com/qwiic)
 - [Adafruit STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt)
 
 ---
