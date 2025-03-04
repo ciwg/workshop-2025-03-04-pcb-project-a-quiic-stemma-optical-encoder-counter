@@ -34,10 +34,28 @@ Rebecca Snyder, Steve Traugott
 - LED light source and photodetector generate signals
 
 ![Encoder Animation](https://upload.wikimedia.org/wikipedia/commons/1/1e/Incremental_directional_encoder.gif)
+![:img Quadrature encoder signals, 50%](quadrature-signals.jpg)
 
 - [Incremental encoder on Wikipedia](https://en.wikipedia.org/wiki/Incremental_encoder)
 - [What is a Quadrature Encoder?](https://www.usdigital.com/blog/what-is-quadrature/)
 - [Encoder Guide](https://www.phidgets.com/docs/Encoder_Guide)
+- [Quadrature encoder signals](https://www.dynapar.com/technology/encoder_basics/quadrature_encoder/)
+
+---
+# How does an optical encoder work?
+
+![:img Optical encoder CW, 40%](r900-mvcw-encoder-base-fig3-2.gif)
+![:img Optical encoder CC, 40%](r900-mvcc-encoder-base-fig3-2.gif)
+
+- [Tutorial from AKM](https://www.akm.com/global/en/products/rotation-angle-sensor/tutorial/type-mechanism-2/)
+---
+# Electrical signals from an encoder
+
+- Quadrature signals A and B
+- Direction of rotation determined by phase relationship
+- Counting pulses on both channels gives position and direction
+
+
 
 ---
 
@@ -46,22 +64,40 @@ Rebecca Snyder, Steve Traugott
 ## Low-speed applications
 - User input for rotary controls
 
-![:img Mouse Mechanism, 35%](Mouse-mechanism-cutaway.png)
+![:img Mouse Mechanism, 30%](Mouse-mechanism-cutaway.png)
+---
+# Where are optical encoders used?
 
 ## High-speed applications
 - Precise position, speed, and direction sensing for motors
     - motor + encoder = servo
     - closed-loop motor control
+
+![:img Closed-loop motor control, 50%](closed-loop.png)
+
+- [Real-Time Feedback Response](https://www.analog.com/en/lp/001/real-time-feedback-response.html)
+
+---
+# Closed-loop motor control
+
+![:img DC Motor Open Loop Vs Closed Loop Demonstrator, 50%](dc-motor-open-loop-vs-closed-loop-demonstrator.png)
+
+- [DC Motor Open Loop Vs Closed Loop Demonstrator](https://www.instructables.com/DC-Motor-Open-Loop-Vs-Closed-Loop-Demonstrator/)
+
 ---
 
 # High speed issues
 
 - Signal frequency increases with speed and resolution
-- Example: 2000 pulses/rev at 2000 RPM ≈ 67 kHz
-- Microcontrollers may struggle to keep up with high-frequency signals
-- Interrupts and software-based counting become unreliable
+    - Example: 2000 pulses/rev at 2,000 RPM * 2 detectors ≈ 133 kHz
+- Microcontrollers struggle to keep up with high-frequency signals
+    - Interrupts and software-based counting miss pulses at high speeds
+    - Microcontroller still handling previous pulse when next pulse arrives
+
+![:img High-resolution discs, 70%](disks-resolution.jpg)
 
 - [High-speed quadrature encoder issue](https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F)
+- [Another high-speed quadrature encoder issue](https://electronics.stackexchange.com/questions/523723/optical-quadrature-encoder-goes-out-of-sync-at-higher-speeds)
 
 ---
 https://en.wikipedia.org/wiki/Incremental_encoder#Quadrature_decoder
