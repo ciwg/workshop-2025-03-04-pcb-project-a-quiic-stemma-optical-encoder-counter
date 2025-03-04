@@ -85,17 +85,24 @@ Rebecca Snyder, Steve Traugott
 
 - Signal frequency increases with speed and resolution
 - If using two GPIO pins to watch the A and B signals, microcontroller may miss pulses
-- Microcontroller still handling previous pulse when next pulse arrives
+    - Microcontroller still handling previous pulse when next pulse arrives
 - Example: 
     - 2000 pulses/rev at 2,000 RPM * 2 detectors ≈ 133 kHz, or 7.5 µs per pulse
-    - if microcontroller takes longer than 7.5 µs to process a pulse, it will miss the next one
+    - If microcontroller takes longer than 7.5 µs to process a pulse, it will miss the next one
 
 ![:img High-resolution discs, 70%](disks-resolution.jpg)
 
 - [High-speed quadrature encoder issue](https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F)
 - [Optical encoder skips pulses at high speeds](https://forum.arduino.cc/t/optical-encoder-skips-pulses-at-high-speeds/1275203)
 ---
-https://en.wikipedia.org/wiki/Incremental_encoder#Quadrature_decoder
+# Solution:  Use dedicated hardware
+
+- Encoder counter circuit with hardware quadrature decoding
+- Counts pulses on A and B signals
+- Figures out direction of rotation from phase relationship
+- Uses pulse count and direction to maintain a position counter
+
+[Quadrature decoder](https://en.wikipedia.org/wiki/Incremental_encoder#Quadrature_decoder)
 ---
 
 # Few open-source encoder counter boards right now
