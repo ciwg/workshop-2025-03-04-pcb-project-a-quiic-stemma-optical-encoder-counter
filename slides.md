@@ -8,7 +8,6 @@ Rebecca Snyder, Steve Traugott
 
 *CSWG Workshop March 2025*
 
-
 ---
 
 # Outline
@@ -23,7 +22,6 @@ Rebecca Snyder, Steve Traugott
 - Many available Quiic/STEMMA peripherals
 - No available Quiic/STEMMA high-speed encoder counters
 
-
 ---
 
 # What is a quadrature optical encoder?
@@ -34,7 +32,10 @@ Rebecca Snyder, Steve Traugott
 - LED light source and photodetector generate signals[^1][^2]
 
 Quadrature encoder diagram
-*CC BY-SA 3.0*
+
+
+[^1]: https://www.usdigital.com/blog/what-is-quadrature/
+[^2]: https://www.phidgets.com/docs/Encoder_Guide
 
 ---
 
@@ -48,6 +49,9 @@ Quadrature encoder diagram
 Encoder application
 *CC BY-SA 3.0*
 
+[^1]: https://www.usdigital.com/blog/what-is-quadrature/
+[^3]: https://www.automate.org/motion-control/industry-insights/understanding-optical-encoders-part-i-of-ii
+
 ---
 
 # High speed issues
@@ -56,6 +60,8 @@ Encoder application
 - Example: 2000 pulses/rev at 2000 RPM ≈ 67 kHz
 - Microcontrollers may struggle to keep up with high-frequency signals
 - Interrupts and software-based counting become unreliable[^10]
+
+[^10]: https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F
 
 ---
 
@@ -74,6 +80,8 @@ Encoder application
 - Allows multiple devices on the same bus
 - Simple and widely supported in electronics[^6]
 
+[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
+
 ---
 
 # What is Qwiic/STEMMA?
@@ -86,6 +94,9 @@ Encoder application
 STEMMA QT connector
 *Image © Adafruit, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)*
 
+[^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
+[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+
 ---
 
 # Many available Qwiic/STEMMA microcontroller boards
@@ -96,6 +107,9 @@ STEMMA QT connector
 - Raspberry Pi with STEMMA QT hat
 - Easy integration with existing projects[^7][^8]
 
+[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
+
 ---
 
 # Many available Qwiic/STEMMA peripherals
@@ -104,6 +118,9 @@ STEMMA QT connector
 - Displays: OLED screens
 - Actuators and input devices
 - Rapid prototyping with plug-and-play modules[^7][^8]
+
+[^7]: https://bc-robotics.com/product-tag/stemma-qt/
+[^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
 
 ---
 
@@ -114,7 +131,7 @@ STEMMA QT connector
 - Would simplify integration of high-speed encoders in projects
 - Potential to address limitations of software-based counting
 
-<div style="text-align: center">⁂</div>
+---
 
 [^1]: https://www.usdigital.com/blog/what-is-quadrature/
 
@@ -304,5 +321,5 @@ STEMMA QT connector
 
 [^94]: https://www.plctalk.net/threads/how-to-use-encoders-high-speed-counters.35270/
 
-^95]: https://forums.adafruit.com/viewtopic.php?t=206678
+[^95]: https://forums.adafruit.com/viewtopic.php?t=206678
 

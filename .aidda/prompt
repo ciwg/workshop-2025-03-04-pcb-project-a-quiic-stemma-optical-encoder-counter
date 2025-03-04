@@ -1,4 +1,4 @@
-restore footnotes
+move footnotes to their respective slides
 
 Sysmsg: You are an expert Go programmer. Please make the requested changes to the given code or documentation.
 In: 
@@ -11,4 +11,3 @@ Out:
 
 .stop
 
-move footnotes to their respective slides

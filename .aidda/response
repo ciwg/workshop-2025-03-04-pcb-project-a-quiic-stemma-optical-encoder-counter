@@ -10,7 +10,6 @@ Rebecca Snyder, Steve Traugott
 
 *CSWG Workshop March 2025*
 
-
 ---
 
 # Outline
@@ -24,7 +23,6 @@ Rebecca Snyder, Steve Traugott
 - Many available Quiic/STEMMA microcontroller boards
 - Many available Quiic/STEMMA peripherals
 - No available Quiic/STEMMA high-speed encoder counters
-
 
 ---
 
@@ -41,7 +39,6 @@ Quadrature encoder diagram
 [^1]: https://www.usdigital.com/blog/what-is-quadrature/
 [^2]: https://www.phidgets.com/docs/Encoder_Guide
 
-
 ---
 
 # Why are they needed?
@@ -57,7 +54,6 @@ Encoder application
 [^1]: https://www.usdigital.com/blog/what-is-quadrature/
 [^3]: https://www.automate.org/motion-control/industry-insights/understanding-optical-encoders-part-i-of-ii
 
-
 ---
 
 # High speed issues
@@ -69,7 +65,6 @@ Encoder application
 
 [^10]: https://forum.pjrc.com/index.php?threads%2Fhigh-speed-quadrature-encoder-issue-teensy-4-0.74408%2F
 
-
 ---
 
 # Few open-source encoder counter boards right now
@@ -77,7 +72,6 @@ Encoder application
 - Limited availability of dedicated hardware solutions
 - Most implementations rely on microcontroller interrupts
 - Gap in the market for high-speed, open-source encoder counter boards
-
 
 ---
 
@@ -89,7 +83,6 @@ Encoder application
 - Simple and widely supported in electronics[^6]
 
 [^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
-
 
 ---
 
@@ -106,7 +99,6 @@ STEMMA QT connector
 [^6]: https://learn.adafruit.com/introducing-adafruit-stemma-qt/sparkfun-qwiic
 [^7]: https://bc-robotics.com/product-tag/stemma-qt/
 
-
 ---
 
 # Many available Qwiic/STEMMA microcontroller boards
@@ -120,7 +112,6 @@ STEMMA QT connector
 [^7]: https://bc-robotics.com/product-tag/stemma-qt/
 [^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
 
-
 ---
 
 # Many available Qwiic/STEMMA peripherals
@@ -132,7 +123,6 @@ STEMMA QT connector
 
 [^7]: https://bc-robotics.com/product-tag/stemma-qt/
 [^8]: https://core-electronics.com.au/adafruit-i2c-stemma-qt-rotary-encoder-breakout-with-encoder-stemma-qt-qwiic.html
-
 
 ---
 
